@@ -12,8 +12,9 @@ import Foundation
     
     static func sources() -> Bundle {
         
-        let bundle = Bundle(for: Verifie.self)
-        
-        return bundle
+//        let bundle = Bundle(for: Verifie.self)
+//
+//        return bundle
+        return Bundle.main
     }
 }
