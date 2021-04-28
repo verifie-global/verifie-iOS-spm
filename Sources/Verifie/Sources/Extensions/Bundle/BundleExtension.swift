@@ -15,6 +15,6 @@ import Foundation
 //        let bundle = Bundle(for: Verifie.self)
 //
 //        return bundle
-        return Bundle.main
+        return Bundle.module
     }
 }
