@@ -17,7 +17,7 @@ extension UIViewController {
     
     static func load<T: UIViewController>(from storyboard: Storyboard = .verifie) -> T {
         
-        let bundle = Bundle.sources()
+        let bundle = Bundle.module
         let storyboard = UIStoryboard(name: storyboard.rawValue, bundle: bundle)
         let selfName = String(describing: self)
         let viewController = storyboard.instantiateViewController(withIdentifier: selfName) as! T
