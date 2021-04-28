@@ -1,0 +1,73 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "output1",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "classLabel",
+        "shortDescription" : ""
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 1,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetworkClassifier"
+    },
+    "inputSchema" : [
+      {
+        "height" : "64",
+        "colorspace" : "BGR",
+        "isOptional" : "0",
+        "width" : "64",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 64 × 64)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image"
+      }
+    ],
+    "classLabels" : [
+      "fake",
+      "real"
+    ],
+    "generatedClassName" : "Liveness",
+    "userDefinedMetadata" : {
+
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "ActivationReLU" : 5,
+      "Flatten" : 1,
+      "Softmax" : 1,
+      "BatchNorm" : 5,
+      "Convolution" : 4,
+      "InnerProduct" : 2,
+      "PoolingMax" : 2
+    },
+    "method" : "predict"
+  }
+]

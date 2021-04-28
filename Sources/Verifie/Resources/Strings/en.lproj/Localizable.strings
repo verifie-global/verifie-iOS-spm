@@ -1,0 +1,39 @@
+/* 
+  en.strings
+  VerifieFramework
+
+  Created by Misha Torosyan on 4/28/20.
+  Copyright © 2020 Misha Torosyan. All rights reserved.
+*/
+
+"Move phone closer" = "Move phone closer";
+"Move phone away" = "Move phone away";
+"Hold still" = "Hold still";
+"Align and Tap" = "Align and Tap";
+"Backside of ID" = "Backside of ID";
+"Light face evenly" = "Light face evenly";
+"Face detection has been failed, please try again later." = "Face detection has been failed, please try again later.";
+"Wrong document type" = "Wrong document type";
+"Recommendations" = "Recommendations";
+"Light face evenly" = "Light face evenly";
+"Great!" = "Great!";
+"No Glasses" = "No Glasses";
+"No Shadow" = "No Shadow";
+"No Flash" = "No Flash";
+"Continue" = "Continue";
+"passportTitle" = "Passport";
+"passportInstructionsTitle" = "Passport face page";
+"passportInstructionsSubtitle" = "Place your document within the frame until it is captured automatically";
+"idCardTitle" = "National Identity Card";
+"idCardFrontInstructionsTitle" = "Scan Identity Card Front";
+"idCardFrontInstructionsSubtitle" = "Place your document within the frame until it is captured automatically";
+"idCardBackInstructionsTitle" = "Scan Identity Card Back";
+"idCardBackInstructionsSubtitle" = "Place your document within the frame until it is captured automatically";
+"Residence Permit Card" = "Residence Permit Card";
+"Front of permit" = "Front of permit";
+"Back of permit" = "Back of permit";
+"Position the front of your permit in the frame" = "Position the front of your permit in the frame";
+"Position the back of your permit in the frame" = "Position the back of your permit in the frame";
+"Scan Document" = "Scan Document";
+"Place your phone directly on top of your document as shown in the picture below." = "Place your phone directly on top of your document as shown in the picture below.";
+"Continue" = "Continue";

@@ -1,0 +1,100 @@
+{
+  "layer_shapes" : {
+    "activation_4_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "activation_1_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "output1" : {
+      "k" : 2,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "batch_normalization_5_output" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "flatten_1_output" : {
+      "k" : 8192,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "batch_normalization_3_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "dense_2_output" : {
+      "k" : 2,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "max_pooling2d_1_output" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "batch_normalization_1_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "max_pooling2d_2_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "activation_2_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "image" : {
+      "k" : 3,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "activation_5_output" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "activation_3_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "batch_normalization_4_output" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "batch_normalization_2_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    }
+  }
+}
