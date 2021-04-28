@@ -12,7 +12,7 @@
         <!--Root Navigation Controller-->
         <scene sceneID="B20-Rq-KKe">
             <objects>
-                <navigationController storyboardIdentifier="RootNavigationController" id="IVm-UO-jH8" customClass="RootNavigationController" customModule="Verifie" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RootNavigationController" id="IVm-UO-jH8" customClass="RootNavigationController" customModule="Verifie" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="KP1-7W-atR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -29,7 +29,7 @@
         <!--Passport-->
         <scene sceneID="6nI-xO-B2a">
             <objects>
-                <viewController storyboardIdentifier="DocScannerViewController" id="kPi-2c-Yj7" customClass="DocScannerViewController" customModule="Verifie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DocScannerViewController" id="kPi-2c-Yj7" customClass="DocScannerViewController" customModule="Verifie" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cvv-Ub-IM1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,7 +206,7 @@
         <!--Recommendations-->
         <scene sceneID="iky-97-IjT">
             <objects>
-                <viewController storyboardIdentifier="RecommendationsViewController" id="Ppo-qs-KR2" customClass="RecommendationsViewController" customModule="Verifie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecommendationsViewController" id="Ppo-qs-KR2" customClass="RecommendationsViewController" customModule="Verifie" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JFJ-9d-hwp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -450,7 +450,7 @@
         <!--Doc Instructions View Controller-->
         <scene sceneID="rcd-i6-JfM">
             <objects>
-                <viewController storyboardIdentifier="DocInstructionsViewController" id="08k-4e-JqP" customClass="DocInstructionsViewController" customModule="Verifie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DocInstructionsViewController" id="08k-4e-JqP" customClass="DocInstructionsViewController" customModule="Verifie" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6iu-sC-LAv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
