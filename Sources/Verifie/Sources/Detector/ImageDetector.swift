@@ -50,14 +50,7 @@ final class ImageDetector {
     //    MARK: - Internal Functions
     func detectFace(_ image: UIImage,
                            completion: @escaping (ImageDetectorResult<(UIImage, CGRect)>) -> Void) {
-        
-//        guard
-//            let image = image.cgImage,
-//            isSuitable(image: image) else {
-//                completion(.notFound)
-//                return
-//        }
-        
+
         guard
             let image = image.cgImage,
             image.isSuitable() else {

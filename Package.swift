@@ -27,7 +27,7 @@ let package = Package(
             ],
             resources: [
                 .copy("Resources/ML Models/Liveness.mlmodelc"),
-                .copy("Resources/tessdata/ocrb.traineddata")
+                .copy("Resources/tessdata")
             ])
     ]
 )

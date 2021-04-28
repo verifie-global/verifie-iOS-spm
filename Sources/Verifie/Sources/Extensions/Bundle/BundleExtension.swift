@@ -11,10 +11,6 @@ import Foundation
 @objc public extension Bundle {
     
     static func sources() -> Bundle {
-        
-//        let bundle = Bundle(for: Verifie.self)
-//
-//        return bundle
-        return Bundle.module
+        Bundle.module
     }
 }
