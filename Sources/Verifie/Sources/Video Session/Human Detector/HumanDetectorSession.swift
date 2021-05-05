@@ -99,7 +99,7 @@ final class HumanDetectorSession: VideoSession {
             videoDataOutput = AVCaptureVideoDataOutput()
         }
 
-        session.sessionPreset = .medium
+        session.sessionPreset = .high
         livenessManager.delegate = self
         self.delegate = delegate
     }
