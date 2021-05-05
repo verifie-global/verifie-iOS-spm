@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import libtesseract
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

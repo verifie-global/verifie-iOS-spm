@@ -10,7 +10,7 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        .library(name: "Verifie", targets: ["Verifie"]),
+        .library(name: "Verifie", type: .dynamic, targets: ["Verifie"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0")),

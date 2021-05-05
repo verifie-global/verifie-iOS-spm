@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C6BA38A92642F3010075FE1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA38A82642F3010075FE1F /* ViewController.swift */; };
 		C6BA38AE2642F3030075FE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BA38AD2642F3030075FE1F /* Assets.xcassets */; };
 		C6BA428E2642F4220075FE1F /* Verifie in Frameworks */ = {isa = PBXBuildFile; productRef = C6BA428D2642F4220075FE1F /* Verifie */; };
 		C6BA429D2642F4C00075FE1F /* SecondDocInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42912642F4C00075FE1F /* SecondDocInfoViewController.swift */; };
@@ -19,7 +18,6 @@
 		C6BA42BD2642F4E90075FE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42B42642F4E90075FE1F /* AppDelegate.swift */; };
 		C6BA42BE2642F4E90075FE1F /* OBJCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42B52642F4E90075FE1F /* OBJCViewController.m */; };
 		C6BA42C02642F4E90075FE1F /* CustomHumanDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42B92642F4E90075FE1F /* CustomHumanDetectorViewController.swift */; };
-		C6BA42C12642F4E90075FE1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42BA2642F4E90075FE1F /* ViewController.swift */; };
 		C6BA42C22642F4E90075FE1F /* CustomDocScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42BB2642F4E90075FE1F /* CustomDocScannerViewController.swift */; };
 		C6BA42C82642F5210075FE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA42C42642F5210075FE1F /* LaunchScreen.storyboard */; };
 		C6BA42C92642F5210075FE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA42C62642F5210075FE1F /* Main.storyboard */; };
@@ -27,7 +25,6 @@
 
 /* Begin PBXFileReference section */
 		C6BA38A12642F3010075FE1F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6BA38A82642F3010075FE1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6BA38AD2642F3030075FE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BA38B22642F3030075FE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6BA42912642F4C00075FE1F /* SecondDocInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondDocInfoViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +38,6 @@
 		C6BA42B62642F4E90075FE1F /* Example-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6BA42B82642F4E90075FE1F /* OBJCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJCViewController.h; sourceTree = "<group>"; };
 		C6BA42B92642F4E90075FE1F /* CustomHumanDetectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHumanDetectorViewController.swift; sourceTree = "<group>"; };
-		C6BA42BA2642F4E90075FE1F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6BA42BB2642F4E90075FE1F /* CustomDocScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDocScannerViewController.swift; sourceTree = "<group>"; };
 		C6BA42C52642F5210075FE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6BA42C72642F5210075FE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,8 +84,6 @@
 				C6BA42B52642F4E90075FE1F /* OBJCViewController.m */,
 				C6BA42C42642F5210075FE1F /* LaunchScreen.storyboard */,
 				C6BA42C62642F5210075FE1F /* Main.storyboard */,
-				C6BA42BA2642F4E90075FE1F /* ViewController.swift */,
-				C6BA38A82642F3010075FE1F /* ViewController.swift */,
 				C6BA38AD2642F3030075FE1F /* Assets.xcassets */,
 				C6BA38B22642F3030075FE1F /* Info.plist */,
 			);
@@ -250,9 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6BA429E2642F4C00075FE1F /* VerificationResultViewController.swift in Sources */,
-				C6BA38A92642F3010075FE1F /* ViewController.swift in Sources */,
 				C6BA42C02642F4E90075FE1F /* CustomHumanDetectorViewController.swift in Sources */,
-				C6BA42C12642F4E90075FE1F /* ViewController.swift in Sources */,
 				C6BA429F2642F4C00075FE1F /* ImagesTableViewCell.swift in Sources */,
 				C6BA42A02642F4C00075FE1F /* InfoTableViewCell.swift in Sources */,
 				C6BA42C22642F4E90075FE1F /* CustomDocScannerViewController.swift in Sources */,
@@ -416,7 +408,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.verifie.verifie.Example;
+				MARKETING_VERSION = 2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verifie.verifie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Example/View Controllers/Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -439,7 +432,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.verifie.verifie.Example;
+				MARKETING_VERSION = 2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verifie.verifie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Example/View Controllers/Example-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
