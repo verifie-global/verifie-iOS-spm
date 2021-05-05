@@ -27,14 +27,6 @@ let package = Package(
 
 See example project.
 
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-```
-
 ## Author
 Oxygen LLC
 

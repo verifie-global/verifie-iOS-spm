@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
+          "version": "5.4.3"
+        }
+      },
+      {
+        "package": "JGProgressHUD",
+        "repositoryURL": "https://github.com/JonasGessner/JGProgressHUD.git",
+        "state": {
+          "branch": null,
+          "revision": "78d7cd35f1d90ff74fd82e486f2cbe4b24be8cf9",
+          "version": "2.2.0"
+        }
+      },
+      {
+        "package": "libtesseract",
+        "repositoryURL": "https://github.com/SwiftyTesseract/libtesseract.git",
+        "state": {
+          "branch": null,
+          "revision": "214a36e04d740795d7ba2f07c6108944d0136f8a",
+          "version": "0.2.0"
+        }
+      },
+      {
+        "package": "SwiftyTesseract",
+        "repositoryURL": "https://github.com/SwiftyTesseract/SwiftyTesseract.git",
+        "state": {
+          "branch": null,
+          "revision": "1393d15d0278673dd89f2ba21d3fb748f99e02ce",
+          "version": "4.0.1"
+        }
+      },
+      {
+        "package": "Verifie",
+        "repositoryURL": "https://github.com/verifie-global/verifie-iOS-spm",
+        "state": {
+          "branch": null,
+          "revision": "52f24c5eb2c00c1aa86c0f28269df0d5af267a9a",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
