@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C649FA20264EAA2B003F433C /* Verifie in Frameworks */ = {isa = PBXBuildFile; productRef = C649FA1F264EAA2B003F433C /* Verifie */; };
+		C649FA21264EAA2B003F433C /* Verifie in Embed Frameworks */ = {isa = PBXBuildFile; productRef = C649FA1F264EAA2B003F433C /* Verifie */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		C6BA38AE2642F3030075FE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BA38AD2642F3030075FE1F /* Assets.xcassets */; };
-		C6BA428E2642F4220075FE1F /* Verifie in Frameworks */ = {isa = PBXBuildFile; productRef = C6BA428D2642F4220075FE1F /* Verifie */; };
 		C6BA429D2642F4C00075FE1F /* SecondDocInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42912642F4C00075FE1F /* SecondDocInfoViewController.swift */; };
 		C6BA429E2642F4C00075FE1F /* VerificationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42932642F4C00075FE1F /* VerificationResultViewController.swift */; };
 		C6BA429F2642F4C00075FE1F /* ImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42962642F4C00075FE1F /* ImagesTableViewCell.swift */; };
@@ -21,7 +22,6 @@
 		C6BA42C22642F4E90075FE1F /* CustomDocScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42BB2642F4E90075FE1F /* CustomDocScannerViewController.swift */; };
 		C6BA42C82642F5210075FE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA42C42642F5210075FE1F /* LaunchScreen.storyboard */; };
 		C6BA42C92642F5210075FE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA42C62642F5210075FE1F /* Main.storyboard */; };
-		C6BA42CA264301A70075FE1F /* Verifie in Embed Frameworks */ = {isa = PBXBuildFile; productRef = C6BA428D2642F4220075FE1F /* Verifie */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C6BA42CA264301A70075FE1F /* Verifie in Embed Frameworks */,
+				C649FA21264EAA2B003F433C /* Verifie in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BA428E2642F4220075FE1F /* Verifie in Frameworks */,
+				C649FA20264EAA2B003F433C /* Verifie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +199,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				C6BA428D2642F4220075FE1F /* Verifie */,
+				C649FA1F264EAA2B003F433C /* Verifie */,
 			);
 			productName = Example;
 			productReference = C6BA38A12642F3010075FE1F /* Example.app */;
@@ -230,7 +230,7 @@
 			);
 			mainGroup = C6BA38982642F3010075FE1F;
 			packageReferences = (
-				C6BA428C2642F4210075FE1F /* XCRemoteSwiftPackageReference "verifie-iOS-spm" */,
+				C649FA1E264EAA2B003F433C /* XCRemoteSwiftPackageReference "verifie-iOS-spm" */,
 			);
 			productRefGroup = C6BA38A22642F3010075FE1F /* Products */;
 			projectDirPath = "";
@@ -481,20 +481,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C6BA428C2642F4210075FE1F /* XCRemoteSwiftPackageReference "verifie-iOS-spm" */ = {
+		C649FA1E264EAA2B003F433C /* XCRemoteSwiftPackageReference "verifie-iOS-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/verifie-global/verifie-iOS-spm";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.2;
+				minimumVersion = 1.0.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C6BA428D2642F4220075FE1F /* Verifie */ = {
+		C649FA1F264EAA2B003F433C /* Verifie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C6BA428C2642F4210075FE1F /* XCRemoteSwiftPackageReference "verifie-iOS-spm" */;
+			package = C649FA1E264EAA2B003F433C /* XCRemoteSwiftPackageReference "verifie-iOS-spm" */;
 			productName = Verifie;
 		};
 /* End XCSwiftPackageProductDependency section */
