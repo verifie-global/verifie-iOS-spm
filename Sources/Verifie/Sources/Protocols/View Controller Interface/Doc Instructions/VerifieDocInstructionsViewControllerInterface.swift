@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public protocol DocInstructionsViewControllerActionsDelegate: class {
+@objc public protocol DocInstructionsViewControllerActionsDelegate: AnyObject {
 
     func didPressCloseDocInstructionsViewController(_
     sender: VerifieDocInstructionsViewControllerInterface)

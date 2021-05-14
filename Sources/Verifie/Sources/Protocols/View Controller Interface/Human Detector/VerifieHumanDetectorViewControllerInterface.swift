@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public protocol HumanDetectorViewControllerActionsDelegate: class {
+@objc public protocol HumanDetectorViewControllerActionsDelegate: AnyObject {
     
     func didPressCloseButtonHumanDetectorViewController(_
         sender: VerifieHumanDetectorViewControllerInterface)

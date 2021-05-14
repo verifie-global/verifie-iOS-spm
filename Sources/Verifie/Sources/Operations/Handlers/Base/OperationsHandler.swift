@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol OperationsHandlerDelegate: class {}
+protocol OperationsHandlerDelegate: AnyObject {}
 
 class OperationsHandler {
     

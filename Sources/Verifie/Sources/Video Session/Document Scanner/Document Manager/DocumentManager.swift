@@ -10,7 +10,7 @@ import Vision
 import AVFoundation
 import UIKit
 
-protocol DocumentManagerDelegate: class {
+protocol DocumentManagerDelegate: AnyObject {
     
     func documentManager(_ sender: DocumentManager, didReceive documentImage: UIImage)
     

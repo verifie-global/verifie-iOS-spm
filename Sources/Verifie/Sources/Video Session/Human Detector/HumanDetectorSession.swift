@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-protocol HumanDetectorSessionDelegate: class {
+protocol HumanDetectorSessionDelegate: AnyObject {
     
     func humanDetectorSession(_ session: HumanDetectorSession,
                               didReceive result: LivenessManagerResult,
@@ -99,7 +99,7 @@ final class HumanDetectorSession: VideoSession {
             videoDataOutput = AVCaptureVideoDataOutput()
         }
 
-        session.sessionPreset = .high
+        session.sessionPreset = .vga640x480
         livenessManager.delegate = self
         self.delegate = delegate
     }

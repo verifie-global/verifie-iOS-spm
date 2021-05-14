@@ -1,6 +1,6 @@
 [
   {
-    "shortDescription" : "",
+    "shortDescription" : "passive liveness check.",
     "metadataOutputVersion" : "3.0",
     "outputSchema" : [
       {
@@ -9,7 +9,7 @@
         "formattedType" : "Dictionary (String → Double)",
         "type" : "Dictionary",
         "name" : "output1",
-        "shortDescription" : ""
+        "shortDescription" : "labels: 0,1"
       },
       {
         "isOptional" : "0",
@@ -23,9 +23,9 @@
     "modelParameters" : [
 
     ],
-    "author" : "",
+    "author" : "verifie",
     "specificationVersion" : 1,
-    "license" : "",
+    "license" : "Commercial",
     "isUpdatable" : "0",
     "availability" : {
       "macOS" : "10.13",
@@ -39,25 +39,26 @@
     },
     "inputSchema" : [
       {
-        "height" : "64",
-        "colorspace" : "BGR",
+        "height" : "96",
+        "colorspace" : "RGB",
         "isOptional" : "0",
-        "width" : "64",
+        "width" : "96",
         "isColor" : "1",
-        "formattedType" : "Image (Color 64 × 64)",
+        "formattedType" : "Image (Color 96 × 96)",
         "hasSizeFlexibility" : "0",
         "type" : "Image",
-        "shortDescription" : "",
+        "shortDescription" : "A 96x96 pixel Image",
         "name" : "image"
       }
     ],
     "classLabels" : [
-      "fake",
-      "real"
+      "0",
+      "1"
     ],
     "generatedClassName" : "Liveness",
     "userDefinedMetadata" : {
-
+      "com.github.apple.coremltools.version" : "4.1",
+      "com.github.apple.coremltools.source" : "keras==2.2.4"
     },
     "neuralNetworkLayerTypeHistogram" : {
       "ActivationReLU" : 5,

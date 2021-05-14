@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc public protocol VerifieDelegate: class {
+@objc public protocol VerifieDelegate: AnyObject {
     
     func verifie(_ sender: Verifie, didFailWith error: Error)
     

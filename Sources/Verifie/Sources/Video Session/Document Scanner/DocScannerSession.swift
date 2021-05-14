@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import MobileCoreServices
 
-protocol DocScannerSessionDelegate: class {
+protocol DocScannerSessionDelegate: AnyObject {
     
     func docScannerSession(_ sender: DocScannerSession, didScan docImage: UIImage)
     

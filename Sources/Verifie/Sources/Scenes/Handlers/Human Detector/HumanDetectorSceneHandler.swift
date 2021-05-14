@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol HumanDetectorSceneHandlerDelegate: class {
+protocol HumanDetectorSceneHandlerDelegate: AnyObject {
     
     func humanDetectorSceneHandlerDidReceiveCloseAction(_ sender: HumanDetectorSceneHandler)
 }

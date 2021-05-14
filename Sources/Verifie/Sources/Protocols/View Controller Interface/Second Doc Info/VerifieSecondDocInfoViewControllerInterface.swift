@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public protocol SecondDocInfoViewControllerActionsDelegate: class {
+@objc public protocol SecondDocInfoViewControllerActionsDelegate: AnyObject {
 
     func didPressCloseSecondDocInfoViewController(_
     sender: VerifieSecondDocInfoViewControllerInterface)

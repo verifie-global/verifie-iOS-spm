@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol OperationsManagerDelegate: class {
+protocol OperationsManagerDelegate: AnyObject {
     
     func operationsManager(_ sender: OperationsManager, didReceive error: VerifieError)
     

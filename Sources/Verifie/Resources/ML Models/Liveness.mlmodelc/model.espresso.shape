@@ -2,15 +2,15 @@
   "layer_shapes" : {
     "activation_4_output" : {
       "k" : 32,
-      "w" : 32,
+      "w" : 48,
       "n" : 1,
-      "h" : 32
+      "h" : 48
     },
     "activation_1_output" : {
       "k" : 16,
-      "w" : 64,
+      "w" : 96,
       "n" : 1,
-      "h" : 64
+      "h" : 96
     },
     "output1" : {
       "k" : 2,
@@ -25,16 +25,16 @@
       "h" : 1
     },
     "flatten_1_output" : {
-      "k" : 8192,
+      "k" : 18432,
       "w" : 1,
       "n" : 1,
       "h" : 1
     },
     "batch_normalization_3_output" : {
       "k" : 32,
-      "w" : 32,
+      "w" : 48,
       "n" : 1,
-      "h" : 32
+      "h" : 48
     },
     "dense_2_output" : {
       "k" : 2,
@@ -44,33 +44,33 @@
     },
     "max_pooling2d_1_output" : {
       "k" : 16,
-      "w" : 32,
+      "w" : 48,
       "n" : 1,
-      "h" : 32
+      "h" : 48
     },
     "batch_normalization_1_output" : {
       "k" : 16,
-      "w" : 64,
+      "w" : 96,
       "n" : 1,
-      "h" : 64
+      "h" : 96
     },
     "max_pooling2d_2_output" : {
       "k" : 32,
-      "w" : 16,
+      "w" : 24,
       "n" : 1,
-      "h" : 16
+      "h" : 24
     },
     "activation_2_output" : {
       "k" : 16,
-      "w" : 64,
+      "w" : 96,
       "n" : 1,
-      "h" : 64
+      "h" : 96
     },
     "image" : {
       "k" : 3,
-      "w" : 64,
+      "w" : 96,
       "n" : 1,
-      "h" : 64
+      "h" : 96
     },
     "activation_5_output" : {
       "k" : 64,
@@ -80,21 +80,21 @@
     },
     "activation_3_output" : {
       "k" : 32,
-      "w" : 32,
+      "w" : 48,
       "n" : 1,
-      "h" : 32
+      "h" : 48
     },
     "batch_normalization_4_output" : {
       "k" : 32,
-      "w" : 32,
+      "w" : 48,
       "n" : 1,
-      "h" : 32
+      "h" : 48
     },
     "batch_normalization_2_output" : {
       "k" : 16,
-      "w" : 64,
+      "w" : 96,
       "n" : 1,
-      "h" : 64
+      "h" : 96
     }
   }
 }

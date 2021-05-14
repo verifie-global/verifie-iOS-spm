@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol UIManagerDelegate: class {
+protocol UIManagerDelegate: AnyObject {
     
     func viewControllerToPresent(_ sender: UIManager) -> UIViewController?
 }

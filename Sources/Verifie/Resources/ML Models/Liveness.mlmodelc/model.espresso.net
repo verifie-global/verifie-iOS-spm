@@ -6,8 +6,8 @@
       "bias_r" : 0,
       "bias_b" : 0,
       "center_mean" : 0,
-      "is_network_bgr" : 1,
-      "scale" : 0.0039215688593685627
+      "is_network_bgr" : 0,
+      "scale" : 1
     }
   },
   "properties" : {
@@ -237,6 +237,7 @@
 
       },
       "mode" : 1,
+      "hint_fallback_from_metal" : 1,
       "nd_axis" : 0,
       "debug_info" : "flatten_1",
       "top" : "flatten_1_output",
@@ -244,20 +245,21 @@
       "name" : "flatten_1"
     },
     {
-      "nB" : 8192,
+      "nB" : 18432,
       "top" : "activation_5_output",
       "has_biases" : 1,
+      "blob_biases" : 25,
+      "nC" : 64,
+      "blob_weights" : 27,
       "weights" : {
 
       },
-      "nC" : 64,
-      "blob_weights" : 27,
       "type" : "inner_product",
       "has_relu" : 1,
       "bottom" : "flatten_1_output",
-      "blob_biases" : 25,
-      "has_tanh" : 0,
       "debug_info" : "dense_1",
+      "has_tanh" : 0,
+      "hint_fallback_from_metal" : 1,
       "name" : "dense_1",
       "has_prelu" : 0
     },

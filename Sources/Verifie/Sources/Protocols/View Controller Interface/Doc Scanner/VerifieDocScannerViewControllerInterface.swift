@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc public protocol DocScannerViewControllerActionsDelegate: class {
+@objc public protocol DocScannerViewControllerActionsDelegate: AnyObject {
     
     func didPressCloseButtonDocScannerViewController(_
         sender: VerifieDocScannerViewControllerInterface)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc public protocol VerifieBaseViewControllerDelegate: class {
+@objc public protocol VerifieBaseViewControllerDelegate: AnyObject {
     
     func viewControllerViewDidLoad(_ sender: VerifieBaseViewController)
 }

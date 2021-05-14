@@ -11,7 +11,7 @@ import CoreML
 @available(macOS 10.13, iOS 11.0, tvOS 11.0, watchOS 4.0, *)
 class LivenessInput : MLFeatureProvider {
 
-    /// image as color (kCVPixelFormatType_32BGRA) image buffer, 64 pixels wide by 64 pixels high
+    /// A 96x96 pixel Image as color (kCVPixelFormatType_32BGRA) image buffer, 96 pixels wide by 96 pixels high
     var image: CVPixelBuffer
 
     var featureNames: Set<String> {
@@ -34,25 +34,25 @@ class LivenessInput : MLFeatureProvider {
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     convenience init(imageWith image: CGImage) throws {
-        let __image = try MLFeatureValue(cgImage: image, pixelsWide: 64, pixelsHigh: 64, pixelFormatType: kCVPixelFormatType_32BGRA, options: nil).imageBufferValue!
+        let __image = try MLFeatureValue(cgImage: image, pixelsWide: 96, pixelsHigh: 96, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!
         self.init(image: __image)
     }
 
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     convenience init(imageAt image: URL) throws {
-        let __image = try MLFeatureValue(imageAt: image, pixelsWide: 64, pixelsHigh: 64, pixelFormatType: kCVPixelFormatType_32BGRA, options: nil).imageBufferValue!
+        let __image = try MLFeatureValue(imageAt: image, pixelsWide: 96, pixelsHigh: 96, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!
         self.init(image: __image)
     }
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     func setImage(with image: CGImage) throws  {
-        self.image = try MLFeatureValue(cgImage: image, pixelsWide: 64, pixelsHigh: 64, pixelFormatType: kCVPixelFormatType_32BGRA, options: nil).imageBufferValue!
+        self.image = try MLFeatureValue(cgImage: image, pixelsWide: 96, pixelsHigh: 96, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!
     }
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     func setImage(with image: URL) throws  {
-        self.image = try MLFeatureValue(imageAt: image, pixelsWide: 64, pixelsHigh: 64, pixelFormatType: kCVPixelFormatType_32BGRA, options: nil).imageBufferValue!
+        self.image = try MLFeatureValue(imageAt: image, pixelsWide: 96, pixelsHigh: 96, pixelFormatType: kCVPixelFormatType_32ARGB, options: nil).imageBufferValue!
     }
 }
 
@@ -66,7 +66,7 @@ class LivenessOutput : MLFeatureProvider {
     private let provider : MLFeatureProvider
 
 
-    /// output1 as dictionary of strings to doubles
+    /// labels: 0,1 as dictionary of strings to doubles
     lazy var output1: [String : Double] = {
         [unowned self] in return self.provider.featureValue(for: "output1")!.dictionaryValue as! [String : Double]
     }()
@@ -235,7 +235,7 @@ class Liveness {
         Make a prediction using the convenience interface
 
         - parameters:
-            - image as color (kCVPixelFormatType_32BGRA) image buffer, 64 pixels wide by 64 pixels high
+            - image: A 96x96 pixel Image as color (kCVPixelFormatType_32BGRA) image buffer, 96 pixels wide by 96 pixels high
 
         - throws: an NSError object that describes the problem
 

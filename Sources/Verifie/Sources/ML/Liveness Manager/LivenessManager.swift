@@ -20,11 +20,11 @@ enum LivenessManagerResult {
 }
 
 enum LivenessMLResult: String {
-    case real
-    case fake
+    case real = "1"
+    case fake = "0"
 }
 
-protocol LivenessManagerDelegate: class {
+protocol LivenessManagerDelegate: AnyObject {
     
     func livenessManager(_ sender: LivenessManager,
                          didReceive result: LivenessManagerResult,
@@ -36,11 +36,11 @@ protocol LivenessManagerDelegate: class {
 final class LivenessManager {
     
     //    MARK: - Private Members
-    private let modelImageSize = CGSize(width: 64, height: 64)
-    private var predValue = 0.1
+    private let modelImageSize = CGSize(width: 96, height: 96)
+    private var predValue = 0.6
     private let validRealsPercent = 0.3
-    private let faceFailuresMax = 240
-    private let fakesMax = 600
+    private let faceFailuresMax = 120
+    private let fakesMax = 300
     private let faceSolidityMin = 0.22
     private let faceSolidityMax = 0.4
     private var faceFailuresCount = 0
@@ -60,7 +60,9 @@ final class LivenessManager {
     
     init() {
         
-        self.livenessModel = try! Liveness(configuration: MLModelConfiguration())
+        let config = MLModelConfiguration()
+        config.computeUnits = .cpuAndGPU
+        self.livenessModel = try! Liveness(configuration: config)
     }
     
     
@@ -85,8 +87,6 @@ final class LivenessManager {
         detectFaces(sourceImage) { [weak self] (result) in
             
             guard let self = self else { return }
-            //            debugPrint("reals: \(self.reals)")
-            //            debugPrint("fakes: \(self.fakes)")
             switch result {
             case .success(let result):
                 guard
@@ -141,8 +141,8 @@ final class LivenessManager {
             let result = LivenessMLResult(rawValue: maxOutput.key)
             else { return }
         
-        if maxOutput.value > predValue && result == .real {
-            
+        if (maxOutput.value < predValue && result == .fake) || result == .real {
+        
             reals += 1
             realPersonImage = sourceImage
             

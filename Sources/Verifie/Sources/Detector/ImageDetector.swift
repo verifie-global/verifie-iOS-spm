@@ -128,13 +128,6 @@ final class ImageDetector {
     
     func detectMRZ(_ image: UIImage, completion: @escaping (ImageDetectorResult<String>) -> Void) {
         
-//        guard
-//            let documentImage = image.cgImage,
-//            isSuitable(image: documentImage) else {
-//                completion(.notFound)
-//                return
-//        }
-        
         guard
             let documentImage = image.cgImage,
             documentImage.isSuitable() else {

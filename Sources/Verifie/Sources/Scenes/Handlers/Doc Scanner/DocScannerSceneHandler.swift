@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol DocScannerSceneHandlerDelegate: class {
+protocol DocScannerSceneHandlerDelegate: AnyObject {
     
     func docScannerSceneHandlerDidReceiveCloseAction(_ sender: DocScannerSceneHandler)
 }

@@ -21,7 +21,22 @@
 		C6BA42C22642F4E90075FE1F /* CustomDocScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA42BB2642F4E90075FE1F /* CustomDocScannerViewController.swift */; };
 		C6BA42C82642F5210075FE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA42C42642F5210075FE1F /* LaunchScreen.storyboard */; };
 		C6BA42C92642F5210075FE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA42C62642F5210075FE1F /* Main.storyboard */; };
+		C6BA42CA264301A70075FE1F /* Verifie in Embed Frameworks */ = {isa = PBXBuildFile; productRef = C6BA428D2642F4220075FE1F /* Verifie */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C6BA42CB264301A70075FE1F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6BA42CA264301A70075FE1F /* Verifie in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C6BA38A12642F3010075FE1F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +191,7 @@
 				C6BA389D2642F3010075FE1F /* Sources */,
 				C6BA389E2642F3010075FE1F /* Frameworks */,
 				C6BA389F2642F3010075FE1F /* Resources */,
+				C6BA42CB264301A70075FE1F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

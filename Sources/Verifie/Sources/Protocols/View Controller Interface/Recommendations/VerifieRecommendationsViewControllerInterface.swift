@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public protocol RecommendationsViewControllerActionsDelegate: class {
+@objc public protocol RecommendationsViewControllerActionsDelegate: AnyObject {
     
     func didPressCloseRecommendationsViewController(_
         sender: VerifieRecommendationsViewControllerInterface)

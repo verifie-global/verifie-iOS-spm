@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol RecommendationsSceneHandlerDelegate: class {
+protocol RecommendationsSceneHandlerDelegate: AnyObject {
         
     func recommendationsSceneHandlerDidReceiveCloseAction(_ sender: RecommendationsSceneHandler)
     
