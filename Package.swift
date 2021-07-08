@@ -21,9 +21,10 @@ let package = Package(
         .target(
             name: "Verifie",
             dependencies: ["Alamofire", "MBProgressHUD", "SwiftyTesseract"],
-        resources: [
-            .copy("Resources/ML Models/Liveness.mlmodelc"),
-            .copy("Resources/tessdata")
-        ])
+            exclude: ["Example"],
+            resources: [
+                .copy("Resources/ML Models/Liveness.mlmodelc"),
+                .copy("Resources/tessdata")
+            ])
     ]
 )
