@@ -8,7 +8,8 @@
 
 import Foundation
 
-@objc public class VerifieDocument: NSObject, Codable {
+@objcMembers
+public class VerifieDocument: NSObject, Codable {
     
     public let documentType: String?
     public let documentNumber: String?

@@ -8,6 +8,7 @@
 
 import Foundation
 
+@objcMembers
 public class VerifieScore: NSObject, Codable {
     
     public let facialScore: Double
