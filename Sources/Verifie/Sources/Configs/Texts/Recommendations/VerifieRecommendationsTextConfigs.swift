@@ -8,28 +8,28 @@
 
 import Foundation
 
-@objcMembers public class VerifieRecommendationsTextConfigs: NSObject {
+@objcMembers open class VerifieRecommendationsTextConfigs: NSObject {
     
     /// Title text. Defailt `Recommendations`
-    public let title: String
+    public var title: String
     
     /// Title text. Defailt `Light face evenly`
-    public let subtitle: String
+    public var subtitle: String
     
     /// Recommendation text. Defailt `Great!`
-    public let great: String
+    public var great: String
     
     /// Recommendation text. Defailt `No Glasses`
-    public let noGlasses: String
+    public var noGlasses: String
     
     /// Recommendation text. Defailt `No Shadow`
-    public let noShadow: String
+    public var noShadow: String
     
     /// Recommendation text. Defailt `No Flash`
-    public let noFlas: String
+    public var noFlas: String
     
     /// Recommendation text. Defailt `Continue`
-    public let continueText: String
+    public var continueText: String
     
     
     public init(title: String,

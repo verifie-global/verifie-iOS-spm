@@ -8,16 +8,16 @@
 
 import Foundation
 
-@objcMembers public class VerifieDocInstructionsTextConfigs: NSObject {
+@objcMembers open class VerifieDocInstructionsTextConfigs: NSObject {
     
     /// Instruction title text. Default `Scan Document`
-    public let instructionTitle: String
+    public var instructionTitle: String
     
     /// Instruction subtitle text. Default `Place your phone directly on top of your document as shown in the picture below.`
-    public let instructionSubtitle: String
+    public var instructionSubtitle: String
     
     /// Continue button title. Default `Continue`
-    public let continueButtonTitle: String
+    public var continueButtonTitle: String
     
     
     public init(instructionTitle: String,

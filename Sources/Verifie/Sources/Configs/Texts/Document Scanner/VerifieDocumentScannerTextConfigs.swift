@@ -8,52 +8,52 @@
 
 import Foundation
 
-@objcMembers public class VerifieDocumentScannerTextConfigs: NSObject {
+@objcMembers open class VerifieDocumentScannerTextConfigs: NSObject {
     
     /// Passport title text. Default `Passport`
-    public let passportTitle: String
+    public var passportTitle: String
     
     /// Passport instruction title text. Default `Passport face page`
-    public let passportInstructionsTitle: String
+    public var passportInstructionsTitle: String
     
     /// Passport instruction subtitle text. Default `Position the page with your photo in the frame`
-    public let passportInstructionsSubtitle: String
+    public var passportInstructionsSubtitle: String
     
     
     /// Id Card title text. Default `National Identity Card`
-    public let idCardTitle: String
+    public var idCardTitle: String
     
     /// Id Card instruction title text. Default `Front of card`
-    public let idCardFrontInstructionsTitle: String
+    public var idCardFrontInstructionsTitle: String
     
     /// Id Card instruction title text. Default `Back of card`
-    public let idCardBackInstructionsTitle: String
+    public var idCardBackInstructionsTitle: String
     
     /// Id Card instruction subtitle text. Default `Position the front of your card in the frame`
-    public let idCardFrontInstructionsSubtitle: String
+    public var idCardFrontInstructionsSubtitle: String
     
     /// Id Card instruction subtitle text. Default `Position the back of your card in the frame`
-    public let idCardBackInstructionsSubtitle: String
+    public var idCardBackInstructionsSubtitle: String
     
     
     /// Permit Card title text. Default `Residence Permit Card`
-    public let permitCardTitle: String
+    public var permitCardTitle: String
     
     /// Id Card instruction title text. Default `Front of permit`
-    public let permitCardFrontInstructionsTitle: String
+    public var permitCardFrontInstructionsTitle: String
     
     /// Id Card instruction title text. Default `Back of permit`
-    public let permitCardBackInstructionsTitle: String
+    public var permitCardBackInstructionsTitle: String
     
     /// Id Card instruction subtitle text. Default `Position the front of your permit in the frame`
-    public let permitCardFrontInstructionsSubtitle: String
+    public var permitCardFrontInstructionsSubtitle: String
     
     /// Id Card instruction subtitle text. Default `Position the back of your permit in the frame`
-    public let permitCardBackInstructionsSubtitle: String
+    public var permitCardBackInstructionsSubtitle: String
     
 
     /// Wrong document type text. Default `Wrong document type`
-    public let wrongDocumentType: String
+    public var wrongDocumentType: String
     
     
     public init(passportTitle: String,

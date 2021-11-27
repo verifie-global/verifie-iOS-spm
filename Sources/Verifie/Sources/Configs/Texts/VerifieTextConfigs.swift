@@ -8,34 +8,34 @@
 
 import Foundation
 
-@objcMembers public class VerifieTextConfigs: NSObject {
+@objcMembers open class VerifieTextConfigs: NSObject {
     
     /// Move phone closer text. Default `Move phone closer`
-    public let movePhoneCloser: String
+    public var movePhoneCloser: String
     
     /// Move phone away text. Default `Move phone away`
-    public let movePhoneAway: String
+    public var movePhoneAway: String
     
     /// Hold still text. Default `Hold still`
-    public let holdStill: String
+    public var holdStill: String
         
     /// Face failed text. Default `Light face evenly`
-    public let faceFailed: String
+    public var faceFailed: String
     
     /// Eyes failed text. Default `Light face evenly`
-    public let eyesFailed: String
+    public var eyesFailed: String
     
     /// Detection failed text. Default `Detection failed`
-    public let detectionFailed: String
+    public var detectionFailed: String
     
     /// Text config for document scanner screen
-    public let documentScannerConfigs: VerifieDocumentScannerTextConfigs
+    public var documentScannerConfigs: VerifieDocumentScannerTextConfigs
     
     /// Text config for recommendation screen
-    public let recommendationsConfigs: VerifieRecommendationsTextConfigs
+    public var recommendationsConfigs: VerifieRecommendationsTextConfigs
     
     /// Text config for document instruction screen
-    public let documentInstructionsConfigs: VerifieDocInstructionsTextConfigs
+    public var documentInstructionsConfigs: VerifieDocInstructionsTextConfigs
     
     
     public init(movePhoneCloser: String,
