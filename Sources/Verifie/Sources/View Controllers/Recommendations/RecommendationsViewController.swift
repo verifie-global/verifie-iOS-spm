@@ -10,11 +10,8 @@ import UIKit
 
 final class RecommendationsViewController: VerifieBaseViewController, VerifieRecommendationsViewControllerInterface {
     
-    @IBOutlet weak var videoPreviewView: VerifieVideoSessionPreviewView! {
-        didSet {
-            videoPreviewView.autorotate = false
-        }
-    }
+    internal weak var videoPreviewView: VerifieVideoSessionPreviewView!
+    
     @IBOutlet private weak var subtitleLabel: UILabel!
     @IBOutlet private weak var greatLabel: UILabel!
     @IBOutlet private weak var noGlassesLabel: UILabel!

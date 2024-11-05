@@ -211,25 +211,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaD-KZ-5Wg" customClass="VerifieVideoSessionPreviewView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uk5-rq-8El">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EAF-3Q-19k">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        </view>
-                                        <blurEffect style="dark"/>
-                                    </visualEffectView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Uk5-rq-8El" firstAttribute="top" secondItem="LaD-KZ-5Wg" secondAttribute="top" id="7Ot-My-Fkt"/>
-                                    <constraint firstItem="Uk5-rq-8El" firstAttribute="leading" secondItem="LaD-KZ-5Wg" secondAttribute="leading" id="Cno-dM-i5B"/>
-                                    <constraint firstAttribute="trailing" secondItem="Uk5-rq-8El" secondAttribute="trailing" id="P7V-zs-rcj"/>
-                                    <constraint firstAttribute="bottom" secondItem="Uk5-rq-8El" secondAttribute="bottom" id="sPA-kz-Gzb"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bqr-ab-5BN">
                                 <rect key="frame" x="0.0" y="128" width="414" height="698"/>
                                 <subviews>
@@ -421,13 +402,9 @@
                         <viewLayoutGuide key="safeArea" id="IkQ-2B-JPQ"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LaD-KZ-5Wg" firstAttribute="top" secondItem="JFJ-9d-hwp" secondAttribute="top" id="EPX-ek-X0s"/>
                             <constraint firstItem="bqr-ab-5BN" firstAttribute="leading" secondItem="IkQ-2B-JPQ" secondAttribute="leading" id="H1n-oj-d6y"/>
-                            <constraint firstItem="LaD-KZ-5Wg" firstAttribute="trailing" secondItem="IkQ-2B-JPQ" secondAttribute="trailing" id="J8r-ka-skx"/>
                             <constraint firstItem="IkQ-2B-JPQ" firstAttribute="bottom" secondItem="bqr-ab-5BN" secondAttribute="bottom" constant="36" id="Za7-ng-aP7"/>
                             <constraint firstItem="IkQ-2B-JPQ" firstAttribute="trailing" secondItem="bqr-ab-5BN" secondAttribute="trailing" id="ggo-k9-TmT"/>
-                            <constraint firstAttribute="bottom" secondItem="LaD-KZ-5Wg" secondAttribute="bottom" id="jfK-RF-qVe"/>
-                            <constraint firstItem="LaD-KZ-5Wg" firstAttribute="leading" secondItem="IkQ-2B-JPQ" secondAttribute="leading" id="urt-pB-ypE"/>
                             <constraint firstItem="bqr-ab-5BN" firstAttribute="top" secondItem="IkQ-2B-JPQ" secondAttribute="top" constant="36" id="xms-jb-Ycq"/>
                         </constraints>
                     </view>
@@ -447,7 +424,6 @@
                         <outlet property="noGlassesLabel" destination="cV5-5d-eH0" id="gmK-Q5-kqm"/>
                         <outlet property="noShadowLabel" destination="7kr-1E-fFE" id="98b-7I-8Re"/>
                         <outlet property="subtitleLabel" destination="cso-eM-C2R" id="boj-Cp-Kzk"/>
-                        <outlet property="videoPreviewView" destination="LaD-KZ-5Wg" id="BUc-uv-7Jm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zC0-TC-kLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
