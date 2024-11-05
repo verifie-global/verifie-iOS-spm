@@ -1,23 +1,23 @@
 {
   "images" : [
     {
+      "filename" : "Group 18327.png",
       "idiom" : "universal",
-      "filename" : "Passport.png",
       "scale" : "1x"
     },
     {
+      "filename" : "Group 18326.png",
       "idiom" : "universal",
-      "filename" : "Passport@2x.png",
       "scale" : "2x"
     },
     {
+      "filename" : "Group 18326 (2).png",
       "idiom" : "universal",
-      "filename" : "Passport@3x.png",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

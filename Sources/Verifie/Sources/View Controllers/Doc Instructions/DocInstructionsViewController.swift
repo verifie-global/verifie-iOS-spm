@@ -12,6 +12,7 @@ final class DocInstructionsViewController: VerifieBaseViewController,
                                             VerifieDocInstructionsViewControllerInterface {
     
     //    MARK: - Private Members
+    @IBOutlet private weak var bgImage: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var subtitleLabel: UILabel!
     @IBOutlet private weak var documentImageView: UIImageView!
@@ -39,6 +40,8 @@ final class DocInstructionsViewController: VerifieBaseViewController,
         
         titleLabel.text = textConfigs.instructionTitle
         subtitleLabel.text = textConfigs.instructionSubtitle
+        continueButton.layer.cornerRadius = 8
+        continueButton.layer.masksToBounds = true
         continueButton.setTitle(textConfigs.continueButtonTitle, for: .normal)
         
         switch documentType {

@@ -40,6 +40,8 @@ final class RecommendationsViewController: VerifieBaseViewController, VerifieRec
         noGlassesLabel.text = textConfigs.noGlasses
         noShadowLabel.text = textConfigs.noShadow
         noFlashLabel.text = textConfigs.noFlas
+        continueButton.layer.cornerRadius = 8
+        continueButton.layer.masksToBounds = true
         continueButton.setTitle(textConfigs.continueText, for: .normal)
     }
     
