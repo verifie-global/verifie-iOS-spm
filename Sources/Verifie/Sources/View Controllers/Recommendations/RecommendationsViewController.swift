@@ -14,6 +14,7 @@ final class RecommendationsViewController: VerifieBaseViewController, VerifieRec
     
     @IBOutlet private weak var subtitleLabel: UILabel!
     @IBOutlet private weak var greatLabel: UILabel!
+    @IBOutlet private weak var greatC: UIView!
     @IBOutlet private weak var noGlassesLabel: UILabel!
     @IBOutlet private weak var noShadowLabel: UILabel!
     @IBOutlet private weak var noFlashLabel: UILabel!
@@ -37,7 +38,15 @@ final class RecommendationsViewController: VerifieBaseViewController, VerifieRec
         noGlassesLabel.text = textConfigs.noGlasses
         noShadowLabel.text = textConfigs.noShadow
         noFlashLabel.text = textConfigs.noFlas
+        
+        greatC.layer.cornerRadius = 12
+        
+        greatC.layer.borderColor = UIColor(red: 141/255.0, green: 147/255.0, blue: 158/255.0, alpha: 1.0).cgColor
+
+        greatC.layer.masksToBounds = true
+
         continueButton.layer.cornerRadius = 8
+        continueButton.layer.borderWidth = 1
         continueButton.layer.masksToBounds = true
         continueButton.setTitle(textConfigs.continueText, for: .normal)
     }
