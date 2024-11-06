@@ -438,6 +438,7 @@
                         <outlet property="continueButton" destination="1dS-wd-PEg" id="zk9-p1-ZB6"/>
                         <outlet property="greatC" destination="pvz-E1-LBx" id="x9X-53-lSg"/>
                         <outlet property="greatLabel" destination="sNU-ar-waw" id="42k-wU-s21"/>
+                        <outlet property="image1" destination="XlY-SG-N6w" id="ftC-3h-9Bb"/>
                         <outlet property="noFlashC" destination="wZ1-J5-M8W" id="pbf-bq-QgZ"/>
                         <outlet property="noFlashLabel" destination="wWa-bo-kn6" id="YAH-Z4-VdG"/>
                         <outlet property="noGlassesC" destination="NlG-d1-CpB" id="KNl-X8-Oih"/>
