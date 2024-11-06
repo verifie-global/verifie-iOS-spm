@@ -32,7 +32,7 @@ final class RecommendationsViewController: VerifieBaseViewController, VerifieRec
     
     //    MARK: - Internal Functions
     func update(_ textConfigs: VerifieRecommendationsTextConfigs) {
-        
+        print("JJ2")
         title = textConfigs.title
         subtitleLabel.text = textConfigs.subtitle
         greatLabel.text = textConfigs.great
@@ -49,7 +49,6 @@ final class RecommendationsViewController: VerifieBaseViewController, VerifieRec
         noGlassesC.layer.masksToBounds = true
 
         continueButton.layer.cornerRadius = 8
-        continueButton.layer.borderWidth = 1
         continueButton.layer.masksToBounds = true
         continueButton.setTitle(textConfigs.continueText, for: .normal)
     }
