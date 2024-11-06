@@ -43,10 +43,12 @@ final class RecommendationsViewController: VerifieBaseViewController, VerifieRec
         greatC.layer.cornerRadius = 12
         greatC.layer.borderColor = UIColor(red: 141/255.0, green: 147/255.0, blue: 158/255.0, alpha: 1.0).cgColor
         greatC.layer.masksToBounds = true
+        greatC.layer.borderWidth = 1
         
         noGlassesC.layer.cornerRadius = 12
         noGlassesC.layer.borderColor = UIColor(red: 141/255.0, green: 147/255.0, blue: 158/255.0, alpha: 1.0).cgColor
         noGlassesC.layer.masksToBounds = true
+        noGlassesC.layer.borderWidth = 1
 
         continueButton.layer.cornerRadius = 8
         continueButton.layer.masksToBounds = true
