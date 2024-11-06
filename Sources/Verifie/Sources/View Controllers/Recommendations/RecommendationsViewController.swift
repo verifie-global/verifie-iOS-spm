@@ -20,7 +20,7 @@ final class RecommendationsViewController: VerifieBaseViewController, VerifieRec
     @IBOutlet private weak var noShadowLabel: UILabel!
     @IBOutlet weak var noShadowC: UIView!
     @IBOutlet private weak var noFlashLabel: UILabel!
-    @IBOutlet weak var noFlashC: UIImageView!
+    @IBOutlet weak var noFlashC: UIView!
     @IBOutlet private weak var continueButton: UIButton!
     
     weak var actionsDelegate: RecommendationsViewControllerActionsDelegate?

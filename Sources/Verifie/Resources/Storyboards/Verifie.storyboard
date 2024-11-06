@@ -367,7 +367,7 @@
                                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="wZ1-J5-M8W" userLabel="rec_4">
                                         <rect key="frame" x="196" y="0.0" width="186" height="186"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec_4" translatesAutoresizingMaskIntoConstraints="NO" id="Hea-4h-3yt">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec_4" translatesAutoresizingMaskIntoConstraints="NO" id="Hea-4h-3yt" userLabel="recaa">
                                                 <rect key="frame" x="22" y="-40" width="142" height="210"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2O1-9n-7Ak">
@@ -438,7 +438,7 @@
                         <outlet property="continueButton" destination="1dS-wd-PEg" id="zk9-p1-ZB6"/>
                         <outlet property="greatC" destination="pvz-E1-LBx" id="x9X-53-lSg"/>
                         <outlet property="greatLabel" destination="sNU-ar-waw" id="42k-wU-s21"/>
-                        <outlet property="noFlashC" destination="Hea-4h-3yt" id="qH7-OF-AUb"/>
+                        <outlet property="noFlashC" destination="wZ1-J5-M8W" id="pbf-bq-QgZ"/>
                         <outlet property="noFlashLabel" destination="wWa-bo-kn6" id="YAH-Z4-VdG"/>
                         <outlet property="noGlassesC" destination="NlG-d1-CpB" id="KNl-X8-Oih"/>
                         <outlet property="noGlassesLabel" destination="Bob-z4-ty1" id="ZUW-1M-oAf"/>
