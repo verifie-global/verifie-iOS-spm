@@ -17,6 +17,7 @@ final class DocScannerViewController: VerifieBaseViewController,
         }
     }
     
+    @IBOutlet weak var backSide: UIImageView!
     @IBOutlet weak var croppingAreaView: UIView!
     @IBOutlet weak var instructionsTitleLabel: UILabel!
     @IBOutlet weak var instructionsSubtitleLabel: UILabel!
@@ -58,6 +59,10 @@ final class DocScannerViewController: VerifieBaseViewController,
             navigationTitle = textConigs.idCardTitle
             instructionsTitle = (pageNumber == .first) ? textConigs.idCardFrontInstructionsTitle : textConigs.idCardBackInstructionsTitle
             instructionsSubtitle = (pageNumber == .first) ? textConigs.idCardFrontInstructionsSubtitle : textConigs.idCardBackInstructionsSubtitle
+            
+            if (pageNumber == .second) {
+                backSide.alpha = 1
+            }
         case .permitCard:
             navigationTitle = textConigs.permitCardTitle
             instructionsTitle = (pageNumber == .first) ? textConigs.permitCardFrontInstructionsTitle : textConigs.permitCardBackInstructionsTitle
