@@ -85,16 +85,16 @@ final class RecommendationsOperationsHandler: OperationsHandler {
         
 //        videoSession.set(previewView: recommendationsSceneHandler.viewController.videoPreviewView)
 //        
-        do {
-            try videoSession.start()
+//        do {
+//            try videoSession.start()
             sceneHandler.viewController.update(textConfigs.recommendationsConfigs)
-        }
-        catch let error as VerifieError {
-            handle(error)
-        }
-        catch {
-            handle(.unhandledError(error))
-        }
+//        }
+//        catch let error as VerifieError {
+//            handle(error)
+//        }
+//        catch {
+//            handle(.unhandledError(error))
+//        }
     }
     
     private func handle(_ error: VerifieError) {
