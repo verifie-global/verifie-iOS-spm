@@ -30,6 +30,7 @@ final class DocInstructionsViewController: VerifieBaseViewController,
     //    MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     
@@ -62,8 +63,8 @@ final class DocInstructionsViewController: VerifieBaseViewController,
         actionsDelegate?.didPressContinueDocInstructionsViewController(self)
     }
     
-    @IBAction func closeButtonAction(_ sender: UIBarButtonItem) {
-        
-        actionsDelegate?.didPressCloseDocInstructionsViewController(self)
-    }
+//    @IBAction func closeButtonAction(_ sender: UIBarButtonItem) {
+//        
+//        actionsDelegate?.didPressCloseDocInstructionsViewController(self)
+//    }
 }
