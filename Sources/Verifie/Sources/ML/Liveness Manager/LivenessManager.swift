@@ -37,7 +37,7 @@ final class LivenessManager {
     
     //    MARK: - Private Members
     private let modelImageSize = CGSize(width: 96, height: 96)
-    private var predValue = 0.6
+    private var predValue = 0.99
     private let validRealsPercent = 0.3
     private let faceFailuresMax = 120
     private let fakesMax = 300
